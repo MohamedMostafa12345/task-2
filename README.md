@@ -9,4 +9,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/MohamedMostafa12345/task-2/tree/master/0020-valid-parentheses) |
+## Array
+|  |
+| ------- |
+| [0066-plus-one](https://github.com/MohamedMostafa12345/task-2/tree/master/0066-plus-one) |
+## Math
+|  |
+| ------- |
+| [0066-plus-one](https://github.com/MohamedMostafa12345/task-2/tree/master/0066-plus-one) |
 <!---LeetCode Topics End-->
