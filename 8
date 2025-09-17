@@ -1,0 +1,21 @@
+void main() {
+  var student = { 
+    'name': 'Ali', 
+    'age': 22, 
+    'grade': 'A' 
+  };
+
+  print("Student details:");
+  student.forEach((key, value) {
+    print("$key: $value");
+  });
+
+  student['city'] = 'Cairo';
+
+  student['grade'] = 'B';
+
+  print("Updated student details:");
+  student.forEach((key, value) {
+    print("$key: $value");
+  });
+}
