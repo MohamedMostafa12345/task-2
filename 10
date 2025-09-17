@@ -1,0 +1,5 @@
+void main() {
+  print(square(10)); 
+}
+
+int square(int num) => num * num;
