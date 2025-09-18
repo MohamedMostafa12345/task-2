@@ -1,0 +1,21 @@
+void main() {
+  Map<String, int> students = {
+    'Ali': 85,
+    'Sara': 92,
+    'Omar': 78,
+    'Laila': 95,
+    'Mona': 88,
+  };
+
+  print("Student names:");
+  for (var name in students.keys) {
+    print(name);
+  }
+
+  int highestGrade = students.values.reduce((a, b) => a > b ? a : b);
+  print("Highest grade: $highestGrade");
+  
+  students.remove('Omar');
+  print("\nAfter removing Omar:");
+  print(students);
+}
