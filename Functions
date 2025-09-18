@@ -1,0 +1,32 @@
+// 1. Normal function
+int areaNormal(int length, int width) {
+  return length * width;
+}
+
+// 2. Arrow function
+int areaArrow(int length, int width) => length * width;
+
+void main() {
+  int length = 10;
+  int width = 5;
+
+  // 1. Using normal function
+  print("Area (Normal Function): ${areaNormal(length, width)}");
+
+  // 2. Using arrow function
+  print("Area (Arrow Function): ${areaArrow(length, width)}");
+
+  // 3. Using anonymous function
+  var areaAnonymous = (int l, int w) {
+    return l * w;
+  };
+  print("Area (Anonymous Function): ${areaAnonymous(length, width)}");
+
+  // 4. Using higher-order function
+  int calculateArea(int l, int w, int Function(int, int) formula) {
+    return formula(l, w);
+  }
+
+  print("Area (Higher-Order Function): "
+      "${calculateArea(length, width, (a, b) => a * b)}");
+}
