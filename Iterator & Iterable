@@ -1,0 +1,12 @@
+Iterable<int> evenNumbers() sync* {
+  for (int i = 2; i <= 20; i += 2) {
+    yield i;
+  }
+}
+
+void main() {
+  print("Even numbers from 1 to 20:");
+  for (var num in evenNumbers()) {
+    print(num);
+  }
+}
